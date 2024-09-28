@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodie Order</title>
+    <link rel="stylesheet" href="food_order.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-j4y4KjqY2jTq62mkub9q6tw5Vx+x6LOwAGg88nEpl6iJNflK0EzpqBj8lGZm82V2" crossorigin="anonymous">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Foodie <span>Order</span></h2>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="#"><i class="fas fa-phone-alt"></i> Contact</a></li>
+            </ul>
+            <button type="button">Order Now</button>
+        </nav>
+    </div>
+    
+    <div class="filter-container">
+        <label for="cuisine-filter">Select <span>Cuisine</span></label>
+        <select id="cuisine-filter" onchange="filterCuisine()">
+            <option value="all">All</option>
+            <option value="tandoori">Tandoori</option>
+            <option value="dragon-bowl">Dragon Bowl</option>
+            <option value="pizza">Pizza</option>
+            <option value="tacos">Tacos</option>
+            <option value="noodles">Noodles</option>
+            <option value="sushi">Sushi</option>
+        </select>
+    </div>
+
+    <div class="title-container">
+        <h3 class="title">Top Cuisines <span class="title1">Around the World</span></h3>
+    </div>
+
+    <div class="food-slider">
+        <div class="food-container" id="food-container">
+            <div class="food-box" data-cuisine="pizza">
+                <div class="food-content">
+                    <img src="images/Pizza.jpeg" alt="Pizza">
+                    <div class="food-details">
+                        <h3>Pizza Paradise</h3>
+                        <p>Cheesy, delicious pizza with fresh toppings. Enjoy a slice of heaven!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="food-box" data-cuisine="tacos">
+                <div class="food-content">
+                    <img src="images/tacos.jpeg" alt="Tacos">
+                    <div class="food-details">
+                        <h3>Taco Fiesta</h3>
+                        <p>Authentic Mexican tacos with flavorful fillings and salsa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="food-box" data-cuisine="tandoori">
+                <div class="food-content">
+                    <img src="images/tandori.jpeg" alt="Tandoori">
+                    <div class="food-details">
+                        <h3>Tandoori Special</h3>
+                        <p>Spicy, flavorful tandoori grilled to perfection. A true delight!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="food-box" data-cuisine="dragon-bowl">
+                <div class="food-content">
+                    <img src="images/Dragon bowl.jpeg" alt="Dragon Bowl">
+                    <div class="food-details">
+                        <h3>Dragon Bowl</h3>
+                        <p>A hearty bowl of mixed vegetables and protein, served with exotic sauces.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="food-box" data-cuisine="noodles">
+                <div class="food-content">
+                    <img src="images/Noodles.jpeg" alt="Noodles">
+                    <div class="food-details">
+                        <h3>Noodles</h3>
+                        <p>A hearty bowl of mixed vegetables and protein, served with exotic sauces.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="food-box" data-cuisine="sushi">
+                <div class="food-content">
+                    <img src="images/Sushi.jpeg" alt="Sushi">
+                    <div class="food-details">
+                        <h3>Sushi</h3>
+                        <p>A hearty bowl of mixed vegetables and protein, served with exotic sauces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="food_order.js"></script>
+</body>
+</html>
